@@ -1,5 +1,5 @@
-const UserItem = (props) => {
-	const { login, avatar_url, html_url } = props.user;
+const UserItem = ({ user: { login, avatar_url, html_url }}) => {
+
 	return (
 		<div className="card text-center">
 			<img
