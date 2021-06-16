@@ -20,6 +20,11 @@ class UserItem extends Component {
 					className="round-img"
 					style={{ width: '60px' }}
 				/>
+				<h3>{this.state.login}</h3>
+
+				<div>
+					<a href={this.state.html_url} className="btn btn-dark btn-sm">More</a>
+				</div>
 			</div>
 		);
 	}
