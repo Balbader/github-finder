@@ -1,13 +1,11 @@
 import UserItem from './UserItem';
-//import Spinner from '../layout/spinner.gif';
+import Spinner from '../layout/spinner.gif';
 import PropTypes from 'prop-types';
 
 const Users = ({ users, loading }) => {
-	/*
 	if (loading) {
-		return <Spinner />
+		return <img src={Spinner} alt='Loading...' />
 	}
-	*/
 	return (
 		<div style={userStyle}>
 			{users.map(user => (
