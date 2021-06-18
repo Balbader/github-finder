@@ -9,6 +9,7 @@ export default class Search extends PureComponent {
 
 	static propTypes = {
 		searchUsers: PropTypes.func.isRequired,
+		clearUsers: PropTypes.func.isRequired
 	};
 
 	onSubmit = e => {
@@ -36,6 +37,7 @@ export default class Search extends PureComponent {
 						className='btn-dark btn-block'
 					/>
 				</form>
+				<button className="btn btn-light btn-block" onClick={this.props.clearUsers}>Clear</button>
 			</div>
 		)
 	}
