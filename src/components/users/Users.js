@@ -1,6 +1,6 @@
 import UserItem from './UserItem';
 //import Spinner from '../layout/spinner.gif';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const Users = ({ users, loading }) => {
 	/*
