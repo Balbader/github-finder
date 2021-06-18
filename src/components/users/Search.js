@@ -1,8 +1,14 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+
 
 export default class Search extends PureComponent {
 	state = {
 		text: ''
+	};
+
+	static propTypes = {
+		searchUsers: PropTypes.func.isRequired,
 	};
 
 	onSubmit = e => {
