@@ -1,5 +1,6 @@
 import UserItem from './UserItem';
 import Spinner from '../layout/spinner.gif';
+import PropTypes from 'prop-types'
 
 const Users = ({ users, loading }) => {
 	if (loading) {
@@ -11,9 +12,15 @@ const Users = ({ users, loading }) => {
 					<UserItem key={user.id} user={user} />
 				))}
 			</div>
-		)
+		);
 	}
 }
+
+Users.propTypes = {
+	users: PropTypes.array.isRequired,
+	loading: PropTypes.bool.isRequired,
+}
+
 
 const userStyle = {
 	display: 'grid',
