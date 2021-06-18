@@ -30,8 +30,15 @@ class App extends Component {
       <div className='App'>
         <Navbar />
         <div className="container">
-          <Search searchUsers={this.searchUsers} clearUsers={this.clearUsers} />
-          <Users loading={this.state.loading} users={this.state.users} />
+          <Search
+            searchUsers={this.searchUsers}
+            clearUsers={this.clearUsers}
+            showClear={this.state.users.length > 0 ? true : false}
+          />
+          <Users
+            loading={this.state.loading}
+            users={this.state.users}
+          />
         </div>
       </div>
     );
