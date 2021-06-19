@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Users = ({ users, loading }) => {
 	if (loading) {
-		return <img src={Spinner} alt='Loading...' />
+		return <img src={Spinner} alt='Loading...' style={{ width: '200px', margin: 'auto', display: 'block' }} />
 	} else {
 		return (
 			<div style={userStyle}>
