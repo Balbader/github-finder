@@ -30,6 +30,9 @@ class App extends Component {
   // Alert users when search field is empty
   setAlert = (msg, type) => {
     this.setState({ alert: {msg, type} });
+
+    // setTimeout to remove the alert from the screen after 5sec
+    setTimeout(() => this.setState({ alert: null }), 5000);
   }
 
   render() {
