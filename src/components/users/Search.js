@@ -42,7 +42,7 @@ export default class Search extends PureComponent {
 				</form>
 				{showClear && (
 					<button
-						className="btn btn-light btn-block"
+						className="btn btn-success btn-block"
 						onClick={clearUsers}
 					>
 						Clear
