@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Spinner from '../layout/Spinner'
+import PropTypes from 'prop-types'
+
 
 export class User extends Component {
 
@@ -28,8 +31,6 @@ export class User extends Component {
 		return (
 			<div>
 				<h1>{name}</h1>
-				<h2>{location}</h2>
-				<p>{bio}</p>
 			</div>
 		)
 	}
