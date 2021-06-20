@@ -96,18 +96,6 @@ export class User extends Component {
 									</Fragment>
 								)}
 							</li>
-							{/* <li>
-								<div className="badge badge-primary">Followers: {followers}</div>
-							</li>
-							<li>
-								<div className="badge badge-success">Following: {following}</div>
-							</li>
-							<li>
-								<div className="badge badge-secondary">Public Repos: {public_repos}</div>
-							</li>
-							<li>
-								<div className="badge badge-dark">Public Gists: {public_gists}</div>
-							</li> */}
 						</ul>
 						<a
 							href={html_url}
