@@ -1,32 +1,30 @@
-import React, { useState } from 'react;'
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Search = ({ searchUsers, showClear, clearUsers }) => {
-	state = {
-		text: ''
-	};
+const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
+	const [text, setText] = useState('');
 
 	const onSubmit = e => {
 		e.preventDefault();
-		if (this.state.text === '') {
-			this.props.setAlert('Search Field Empty ! Please Enter User Name.', 'light');
+		if (text === '') {
+			setAlert('Search Field Empty ! Please Enter User Name.', 'light');
 		} else {
-			this.props.searchUsers(this.state.text);
-			this.setState({ text: '' });
+			searchUsers(text);
+			setText('');
 		}
 	};
 
-	const onChange = e => this.setState({ [e.target.name]: e.target.value });
+	const onChange = e => setText(e.target.value);
 
 	return (
 		<div>
-			<form onSubmit={this.onSubmit} className='form'>
+			<form onSubmit={onSubmit} className='form'>
 				<input
 					type='text'
 					name='text'
 					placeholder='Search User'
-					value={this.state.text}
-					onChange={this.onChange}
+					value={text}
+					onChange={onChange}
 				/>
 				<input
 					type='submit'
@@ -43,8 +41,8 @@ const Search = ({ searchUsers, showClear, clearUsers }) => {
 				</button>
 			)}
 		</div>
-	)
-}
+	);
+};
 
 Search.propTypes = {
 	searchUsers: PropTypes.func.isRequired,
