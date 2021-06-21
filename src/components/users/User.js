@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
-const User = ({ user, loading, getUser, getUserRepos, getUser, repos, match }) => {
-
-	componentDidMount() {
-		this.props.getUser(this.props.match.params.login);
-		this.props.getUserRepos(this.props.match.params.login);
-	}
+const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
+	useEffect(() => {
+		getUser(match.params.login);
+		getUserRepos(match.params.login);
+		// eslint-disable-next-line
+	}, []);
 
 	const {
 		name,
