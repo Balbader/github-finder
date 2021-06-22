@@ -27,16 +27,8 @@ const App = () => {
                     <Users />
                   </Fragment>
                 )} />
-                <Route
-                  exact
-                  path='/about'
-                  component={About}
-                />
-                <Route
-                  exact
-                  path='/user/:login'
-                  component={User}
-                />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/user/:login' component={User} />
               </Switch>
             </div>
           </div>
