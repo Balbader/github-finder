@@ -41,12 +41,6 @@ const App = () => {
     setLoading(false);
   }
 
-  // Clear users form state
-  const clearUsers = () => {
-    setUsers([]);
-    setLoading(false);
-  };
-
   // Alert users when search field is empty
   const showAlert = (msg, type) => {
     setAlert({ msg, type });
@@ -66,8 +60,6 @@ const App = () => {
               <Route exact path='/' render={props => (
                 <Fragment>
                   <Search
-                    clearUsers={clearUsers}
-                    showClear={users.length > 0 ? true : false}
                     setAlert={showAlert}
                   />
                   <Users
