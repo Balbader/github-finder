@@ -12,7 +12,7 @@ const Search = ({ showClear, clearUsers, setAlert }) => {
 		if (text === '') {
 			setAlert('Search Field Empty ! Please Enter User Name.', 'light');
 		} else {
-			searchUsers(text);
+			githubContext.searchUsers(text);
 			setText('');
 		}
 	};
