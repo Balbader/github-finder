@@ -1,7 +1,8 @@
 # Github Finder
 
-React app to search Github profiles. This app uses the Context API along with the useContext and useReducer hooks for state management and is part of the "Modern React Front To Back" Udemy course.<br>
-The goal of this project was to get better at refactoring the code base from<br>`React Class Components` to `React Hooks`
+React app to search Github profiles. This app uses the Context API along with the useContext and useReducer hooks for state management.<br>
+The goal of this project was to get better at refactoring the code base from<br>`React Class Components` to `React Hooks`<br>
+Check the app here: https://basilgithubfinder.netlify.app/ <br><br>
 
 ## Usage
 
